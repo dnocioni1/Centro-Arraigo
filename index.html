@@ -157,7 +157,15 @@
     .nav-links { display: flex; gap: 28px; align-items: center; list-style: none; }
     .nav-links a { text-decoration: none; font-weight: 500; color: var(--tinta); font-size: 0.95rem; }
     .nav-links a:hover { color: var(--tierra); }
-    .nav-cta { padding: 10px 20px !important; font-size: 0.9rem !important; }
+    .nav-links a.nav-cta,
+    .nav-links a.nav-cta:hover {
+      color: var(--crema) !important;
+    }
+    .nav-cta {
+      padding: 10px 22px !important; font-size: 0.9rem !important;
+      box-shadow: 0 2px 8px rgba(34, 56, 43, 0.25);
+    }
+    .nav-cta:hover { background: var(--tierra) !important; box-shadow: 0 4px 12px rgba(176, 112, 60, 0.35); }
     .menu-btn { display: none; background: none; border: none; font-size: 1.8rem; color: var(--pino); cursor: pointer; }
 
     /* ============ HERO ============ */
@@ -205,6 +213,10 @@
       border: 1px solid #3A5A47;
       display: flex; align-items: center; justify-content: center;
       color: #7E957F; font-size: 0.9rem; text-align: center; padding: 20px;
+      overflow: hidden;
+    }
+    .foto-placeholder img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
     }
     .credenciales { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0; }
     .credenciales span {
@@ -404,7 +416,7 @@
 <section class="sobre" id="sobre">
   <div class="wrap sobre-grid">
     <div class="foto-placeholder">
-      [ Foto profesional de Martin ]<br>Reemplazar por imagen real (idealmente cálida, luz natural)
+      <img src="img/martin-travella.jpg" alt="Martin Travella Guiñazu, psicólogo clínico">
     </div>
     <div>
       <span class="eyebrow" style="color:#C98A55">Quién atiende</span>
@@ -509,7 +521,7 @@
         </div>
         <div class="via">
           <svg viewBox="0 0 24 24" fill="none" stroke="#B0703C" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-          <div><b>Correo</b><p><a href="mailto:contacto@centroarraigo.cl">contacto@centroarraigo.cl</a></p></div>
+          <div><b>Correo</b><p><a href="mailto:martintravellah@gmail.com">martintravellah@gmail.com</a></p></div>
         </div>
         <div class="via">
           <svg viewBox="0 0 24 24" fill="none" stroke="#22382B" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
